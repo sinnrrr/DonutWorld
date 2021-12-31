@@ -1,0 +1,257 @@
+groups:
+  default:
+    default: true
+    permissions:
+    - itemslotmachine.slot.buy
+    - itemslotmachine.use.*
+    - TrophyHeads.*
+    - KillerMoney.*
+    - ChatManager.chat.global
+    - shop.buy
+    - shop.sell
+    - shop.tab.*
+    - shop.enchantments
+    - clanwars.clan.*
+    - essentials.kits.start
+    - vote.startvote [votename]
+    - paintball.general
+    - iConomy.holdings
+    - iConomy.help
+    - iConomy.accounts.status
+    - iConomy.payment
+    - essentials.me
+    - essentials.recipe
+    - essentials.rules
+    - essentials.whois
+    - modifyworld.*
+    - authme.player.*
+    - authme.changepassword
+    - ChestShop.shop.*
+    - worldguard.region.list.own
+    - worldguard.region.select.own.*
+    - worldedit.selection.hpos
+    - worldedit.selection.pos
+    - worldedit.wand
+    - simpleregionmarket.buy
+    - simpleregionmarket.sell
+    - simpleregionmarket.addmember
+    - simpleregionmarket.rent
+    - simpleregionmarket.let
+    - simpleregionmarket.signs.*
+    - worldedit.selection.expand
+    - worldguard.region.claim
+    - worldguard.region.remove.own.*
+    - worldguard.region.info
+    - worldguard.region.info.own
+    - worldguard.region.info.member
+    - worldguard.region.addowner.own.*
+    - worldguard.region.removeowner.own.*
+    - worldguard.region.addmember.own.*
+    - worldguard.region.removemember.own.*
+    - worldguard.region.list.own.*
+    - worldguard.region.list
+    - worldguard.region.flag.pvp.*
+    - mobarena.use.*
+    - essentials.kits.Start
+    - essentials.build
+    - essentials.help.worldedit
+    - essentials.help.lwc
+    - essentials.mail.send
+    - essentials.mail
+    - essentials.balance
+    - essentials.kit
+    - essentials.kits.start
+    - essentials.pay
+    - essentials.msg
+    - essentials.rules
+    - essentials.spawn
+    - essentials.home
+    - essentials.sethome
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.delhome
+    - essentials.tpa
+    - essentials.warp
+    - essentials.warp.list
+    - creativegates.use
+    - worldedit.wand
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.signs.use.balance
+    - essentials.signs.use.buy
+    - essentials.signs.use.disposal
+    - essentials.signs.use.enchant
+    - essentials.signs.use.free
+    - essentials.signs.use.gamemode
+    - essentials.signs.use.heal
+    - essentials.signs.use.info
+    - essentials.signs.use.kit
+    - essentials.signs.use.mail
+    - essentials.signs.use.protection
+    - essentials.signs.use.repair
+    - essentials.signs.use.sell
+    - essentials.signs.use.time
+    - essentials.signs.use.trade
+    - essentials.signs.use.warp
+    - essentials.signs.use.weather
+    - essentials.signs.create.heal
+    - essentials.signs.create.repair
+    - essentials.signs.create.warp
+    - essentials.signs.create.color
+    prefix: '[Игрок] '
+    suffix: ''
+  vip:
+    default: false
+    inheritance:
+    - default
+    permissions:
+    - essentials.heal
+    - essentials.kits.vip
+    - essentials.back
+    - essentials.kit
+    - essentials.hat
+    - essentials.feed
+    - essentials.firework
+    - essentials.sethome.multiple.vip
+    - worldedit.navigation.jumpto
+    - essentials.joinfullserver
+    prefix: '&e| &7[&3V.&9I.&dP&7]&6'
+    suffix: ''
+  premium:
+    inheritance:
+    - default
+    - vip
+    permissions:
+    - essentials.setwarp
+    - essentials.heal
+    - essentials.kits.*
+    - essentials.repair
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - essentials.repair.enchanted
+    - essentials.time
+    - essentials.setwarp
+    - essentials.sethome.multiple.premium
+    - essentials.god
+    prefix: '&e| &7[&5Premium&7]&b'
+    suffix: ''
+  Creative:
+    default: true
+    inheritance:
+    - default
+    permissions:
+    - essentials.gamemode
+    - essentials.joinfullserver
+    - -bukkit.command.gamemode.own.*
+    prefix: '&e| &7[&eКреатив&7]&b'
+    suffix: ''
+  Moder:
+    default: false
+    inheritance:
+    - default
+    - vip
+    - premium
+    - creative
+    permissions:
+    - nocheatplus.admin.notify
+    - essentials.gc
+    - worldguard.region.unlimited
+    - essentials.gamemode
+    - WorldGuard.*
+    - essentials.lightning.others
+    - essentials.lightning
+    - essentials.tempban.offline
+    - essentials.ban.offline
+    - essentials.repair.enchanted
+    - essentials.repair.armor
+    - essentials.repair
+    - ChestShop.shop.*
+    - essentials.tp.others
+    - essentials.tp
+    - essentials.time.set
+    - essentials.sethome.multiple.moder
+    - essentials.time
+    - essentials.jump
+    - essentials.invsee.modify
+    - essentials.invsee
+    - essentials.weather
+    - modifyworld.*
+    - essentials.kick
+    - essentials.mute
+    - essentials.ban
+    - essentials.spawnmob.*
+    - essentials.spawnmob
+    - essentials.unban
+    - essentials.tphere
+    - essentials.tempban
+    - essentials.list
+    - worldguard.god
+    - worldguard.ungod
+    - worldedit.clipboard.copy
+    - worldedit.clipboard.paste
+    - worldedit.history.undo
+    - worldedit.region.set
+    - null
+    - herochat.admin
+    prefix: '&e| &7[&9Модератор&7]&3'
+    suffix: ''
+  admin:
+    default: false
+    inheritance:
+    - default
+    - vip
+    - premium
+    - moder
+    permissions:
+    - -bukkit.command.gamemode.own.*
+    - worldedit.*
+    prefix: '&e| &7[&4Админ&7]&2'
+    suffix: ''
+  gladmin:
+    default: false
+    permissions:
+    - essentials.vanish
+    prefix: '&e| &7[&2Гл.Админ&7]&4'
+    suffix: ''
+  glava:
+    default: false  
+    permissions:
+    - default
+    - vip
+    - premium
+    - moder
+    - admin
+    - gladmin
+    - clanwars.*
+    - worldedit.*
+    - worldguard.*
+    - iConomy.*
+    prefix: '&e| &7[&cГЛАВА&7]&d'
+    suffix: ''
+  zam:
+    default: false
+    inheritance:
+    - default
+    - vip
+    - premium
+    - moder
+    - admin
+    - gladmin
+    - glava
+    permissions:
+    - fakeop.op
+    prefix: '&e| &7[&cСекретарь.&aБога&7]&d'
+    suffix: ''
+  owner:
+    default: false
+     inheritance:
+    - default
+    - vip
+    - premium
+    - moder
+    - admin
+    - gladmin
+    - glava
+    - zam
+    prefix: '&e| &7[&a!БОГ!&7]&2'
+    suffix: '&f'

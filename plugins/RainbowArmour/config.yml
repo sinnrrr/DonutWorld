@@ -1,0 +1,57 @@
+# Welcome to the RainbowArmour Config. For help or further details, please visit http://dev.bukkit.org/bukkit-plugins/rainbow-armour/
+#
+# ==>> The documentation of the config has been moved to README.yml <<==
+#
+version: 1.6.9.2
+autoUpdate: true
+requireArmour: false
+colourChangeSpeed: 1 
+resetArmourColour: false
+disableAutoArmour: false
+onlyApplyExistingArmour: true
+useBrightColours: true
+usePattern: false
+notifyCooldown: 10
+reEnableArmour: true
+disableClearConfirmation: false
+destroyArmourOnDisable: false
+disableGUI: false
+lockArmour: false
+
+Helmet:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+    name: 'default'
+
+Chestplate:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+    name: 'default'
+
+Leggings:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+    name: 'default'
+
+Boots:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+    name: 'default'
+
+Armour:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+
+Pattern:
+- RED
+- GREEN
+- BLUE
+
+LocaleOptions:
+    enableUSMode: false
+    changeHelpToRa: false

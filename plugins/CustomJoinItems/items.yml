@@ -1,0 +1,12 @@
+﻿  name: '&cМеню'
+  id: 345
+  slot: 9
+  lore:
+    - '&7Чтобы открыть (ПКМ)'
+  command: 'menu'
+  give-at-respawn: true
+  first-join-only: false
+  allow-drop: false
+  block-movement: false
+  disabled-worlds: world_nether, world_the_end
+  give-on-world-change: true

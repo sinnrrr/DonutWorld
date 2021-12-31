@@ -1,0 +1,52 @@
+﻿######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&1Donate'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'donate')
+  command: 'donate'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note.pling; tell: &eВы открыли меню'
+
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+donate:
+  NAME: '&dDonate'
+  LORE:
+    - 'Взглянуть? (ПКМ)'
+  command: 'open: donate.yml'
+  ID: paper
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+menu-close:
+  NAME: '&6Выйти в мир'
+  ID: barrier
+  LORE:
+    - 'Закрыть меню'
+  POSITION-X: 9
+  POSITION-Y: 3

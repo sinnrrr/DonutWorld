@@ -1,0 +1,54 @@
+#Welcome to the RainbowArmour Message File. For help or further details, please visit http://dev.bukkit.org/bukkit-plugins/rainbow-armour/
+#
+#You can customise the message output of the command using this file. Just delete this file and reload to create a new one!
+#
+#Variables - You may use: (They will not work anywhere else!)
+#%price% in any "noMoney" message.
+#%item% in the "notify" message.
+#%seconds% in the "notify" message.
+#
+
+#-=General Messages=-
+prefix: "&3[&aRainbow Armour&3] "
+noPermission: "&cNo Permission"
+commandNotFound: "&3Error. Use &b/rainbowarmour help"
+clearArmourConfirm: "&3Are you sure you want to clear all of your armour? If so type this command again."
+clearArmourSuccess: "&3Armour cleared."
+notify: "&3This will clear your Rainbow &b%item%&3. Type the command again within &b%seconds%&3 seconds to continue anyway."
+guiTitle: "RainbowArmour"
+
+#-=Rainbow Helmet=-
+helmetName: "&3Helmet"
+helmetEnabled: "&3Rainbow Helmet Enabled."
+helmetDisabled: "&3Rainbow Helmet Disabled."
+helmetNotWearing: "&3Error. You are not wearing a leather helmet."
+helmetNoMoney: "&3You do not have &b$%price%&3."
+
+#-=Rainbow Chestplate=-
+chestplateName: "&3Chestplate"
+chestplateEnabled: "&3Rainbow Chestplate Enabled."
+chestplateDisabled: "&3Rainbow Chestplate Disabled."
+chestplateNotWearing: "&3Error. You are not wearing a leather chestplate."
+chestplateNoMoney: "&3You do not have &b$%price%&3."
+
+#-=Rainbow Leggings=-
+leggingsName: "&3Leggings"
+leggingsEnabled: "&3Rainbow Leggings Enabled."
+leggingsDisabled: "&3Rainbow Leggings Disabled."
+leggingsNotWearing: "&3Error. You are not wearing leather leggings."
+leggingsNoMoney: "&3You do not have &b$%price%&3."
+
+#-=Rainbow Boots=-
+bootsName: "&3Boots"
+bootsEnabled: "&3Rainbow Boots Enabled."
+bootsDisabled: "&3Rainbow Boots Disabled."
+bootsNotWearing: "&3Error. You are not wearing leather boots."
+bootsNoMoney: "&3You do not have &b$%price%&3."
+
+#-=Rainbow Armour=-
+armourName: "&3Armour"
+armourEnabled: "&3Rainbow Armour Enabled."
+armourDisabled: "&3Rainbow Armour Disabled."
+armourNotWearing: "&3Error. You are not wearing full leather armour."
+armourNoMoney: "&3You do not have &b$%price%&3."
+armourError: "&3No Compatible Armour Found."

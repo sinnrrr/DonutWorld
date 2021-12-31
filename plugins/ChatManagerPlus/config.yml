@@ -1,0 +1,59 @@
+## ChatManagerPlus Configuration ##
+
+# Colors:
+#    &0 - Black
+#    &1 - Dark Blue
+#    &2 - Dark Green
+#    &3 - Dark Aqua
+#    &4 - Dark Red
+#    &5 - Purple
+#    &6 - Gold
+#    &7 - Light Gray
+#    &8 - Dark Gray
+#    &9 - Blue
+#    &a - Green
+#    &b - Aqua
+#    &c - Red
+#    &d - Pink
+#    &e - Yellow
+#    &f - White
+#    &k - Magic
+#    &l - Bold
+#    &m - Strikethrough
+#    &n - Underline
+#    &o - Italic
+
+no-access-message: '&cSorry, &b%s&c. You do not have permission to use that command. &7(%c)'
+# Variables:
+#    %s - Sender
+#    %c - Command (Includes command label and all arguments, also includes /)
+#    %r - Raw Command (Includes command label and all arguments, does not include /)
+
+
+broadcast-format: ' &7[&3Broadcast&7] &f%m'
+# Variables: 
+#    %m - Message
+#    %s - Sender
+
+mute-message: '&cYou are Muted, &b%s&c!'
+chat-locked-message: '&cChat is Locked, &b%s&c!'
+no-chat-permission-message: '&cYou do not have permission to chat, &b%s&c!'
+# Variables: 
+#    %s - Sender
+
+
+use-chat-permission: false
+# If set to true, players will be checked for the permission 'chatmanagerplus.chat' when attempting to chat.
+
+chat-lock-broadcast: '    &c&lThe chat has been Locked by &a&l%s&c&l!'
+chat-unlock-broadcast: '    &c&lThe chat has been Unlocked by &a&l%s&c&l!'
+clear-chat-broadcast: '    &c&lThe chat has been Cleared by &a&l%s&c&l!'
+# Variables:
+#    %s - Sender
+
+
+player-join-message: '&3[+] &a%s'
+player-quit-message: '&3[-] &c%s'
+# Variables:
+#    %s - Sender
+# Set these options to 'none' to disable!

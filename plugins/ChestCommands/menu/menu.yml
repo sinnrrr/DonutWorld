@@ -1,0 +1,99 @@
+﻿######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&1Menu'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  # Bind multiple commands using ; (command: 'menu')
+  command: 'menu'
+
+  # auto-refresh - OPTIONAL
+  # How frequently the menu will be refreshed, in seconds.
+  # Useful if you have variables in items' descriptions.
+  auto-refresh: 5
+
+  # This command command will be execute when the menu is opened.
+  # Supports all the icon command types.
+  open-action: 'sound: note.pling; tell: &eВы открыли меню'
+
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+spawncmd:
+  COMMAND: 'spawn'
+  NAME: '&e/spawn'
+  LORE:
+    - 'Телепортирует Вас на спавн'
+  ID: bed
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+this-text-will-not-appear:
+  NAME: '&dFormatting codes'
+  LORE:
+    - 'Админы могут писать такими цветами:'
+    - '&fColors: &c#c &a#a &9#9 &e#e &f... ...'
+    - '&fRandom (#k): &kfy379!H'
+    - '&fBold (#l): &lПример'
+    - '&fStrikethrough (#m): &mПример'
+    - '&fUnderline (#n): &nПример'
+    - '&fItalic (#o): &oПример'
+  ID: paper
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+test-from-console:
+  COMMAND: 'console: say Привет {player}!'
+  NAME: '&cCMD'
+  LORE:
+    - 'Оно произносит твой ник через консоль'
+  ID: command block
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+test-with-placeholder:
+  COMMAND: 'tell: &9Онлайн: &f{online}/{max_players}; tell: &9Ваш ник: &f{player}; tell: &9У вас на счету: &f{money}'
+  NAME: '&6Information'
+  LORE:
+    - 'Express - информация'
+  ID: empty map
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+permission:
+  COMMAND: 'tell: &a[v] You have the correct permission!'
+  NAME: '&8Тест на OP'
+  LORE:
+    - 'Вы можете проверить наличие OP у вашего игрока'
+  ID: 57
+  POSITION-X: 3
+  POSITION-Y: 2
+  PERMISSION: chestcommands.test
+  PERMISSION-MESSAGE: 'К сожалению, Вы не имеете OP =('
+
+
+menu-close:
+  NAME: '&6Выйти в мир'
+  ID: barrier
+  LORE:
+    - 'Закрыть меню'
+  POSITION-X: 9
+  POSITION-Y: 3

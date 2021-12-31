@@ -1,0 +1,12 @@
+com/sk89q/commandbook/session/AdministrativeSession: {mute: false, last-update: 1469988380538}
+com/sk89q/commandbook/locations/TeleportSession:
+    teleport:
+        bringable: {}
+        requests: {}
+    last-update: 1470048030776
+com/sk89q/commandbook/session/UserSession:
+    messaging: {last-recipient: !!null '', last-recipient-time: 1464464398736}
+    confirm-command:
+    last-update: 1470048030776
+com/sk89q/commandbook/AFKComponent/AFKSession: {idle-status: 'null', last-update: 1470048030776}
+com/sk89q/commandbook/FlightComponent/FlightSession: {can-fly: true, last-update: 1470048030775}

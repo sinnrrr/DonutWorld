@@ -1,0 +1,104 @@
+#THIS FILE WILL BE OVERWRITTEN, DO NOT EDIT! This file is a README
+#
+#
+version: 1.6.9.2
+#version - This is the version of the config. Do not touch this, otherwise your config may be overwritten!
+autoUpdate: true
+#autoUpdate - Should the plugin have the auto update facility
+requireArmour: false
+#requireArmour - This sets whether the player will already need to be wearing the armour that will become Rainbow Armour. It will not be spawned in.
+colourChangeSpeed: 1
+#colourChangeSpeed - This sets the speed that the colour of the armour changes at.
+resetArmourColour: false
+#resetArmourColour - This will reset the colour of the armour when Rainbow Armour is disabled making it impossible to get dyed items.
+disableAutoArmour: false
+#disableAutoArmour - This will completely disable the auto armour feature.
+onlyApplyExistingArmour: true
+#onlyApplyExistingArmour - This toggles whether Rainbow Armour will only be applied to the armour the player is currently wearing (e.g. if they are wearing a helmet and this is ENABLED, the helmet will become Rainbow Armour.
+#If a player does the same but this is DISABLED, the player will get an error message.
+useBrightColours: true
+#useBrightColours - Change back to the old colour changer. Use random/darker colours (false) or bright/limited colours (true)
+usePattern: false
+#usePattern - Toggles whether to use the pattern defined below. This will override the 'useBrightColours' setting.
+notifyCooldown: 10
+#notifyCooldown - The time in which players have to enable the armour after a notification.
+reEnableArmour: true
+#reEnableArmour - Whether re enabling armour should be enabled globally. Grant the permission 'rainbowarmour.re-enable' to enable on a per group/user basis.
+disableClearConfirmation: false
+#disableClearConfirmation - Disable the confirmation message when clearing armour.
+destroyArmourOnDisable: false
+#destroyArmourOnDisable - Enabling this will remove a players Armour when using /ra armour or /ra clear/disable
+disableGUI: false
+#disableGUI - Completely disables the GUI on /rainbowarmour command. You can stop some players/groups from seeing the GUI by denying the permission 'rainbowarmour.gui' without having to set this value to true.
+lockArmour: false
+#lockArmour - Should players be allowed to move armour? If not, set to true to disable it globally or grant permission 'rainbowarmour.lock' to disable movement on a per group/user basis. Please note this can have unexpected results when the user is in creative mode.
+
+Helmet:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+    name: 'default'
+
+Chestplate:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+    name: 'default'
+
+Leggings:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+    name: 'default'
+
+Boots:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+    name: 'default'
+
+Armour:
+    payPerUse: false
+    price: 25.0
+    enchant: false
+
+#<armour item from above>:
+#    payPerUse: false
+#    payPerUse - This toggles whether the player must pay a set amount to get the RainbowArmour.
+#    price: 25.0
+#    price - This is how much a player will be charged is payPerUse is enabled.
+#    enchant: false
+#    enchant - Toggles whether armour has the purple glow of enchantment, no enchantment is added.
+#    name: 'default'
+#    name - Changes the display name of armour item. Set to 'default' to disable.
+
+Pattern:
+- RED
+- GREEN
+- BLUE
+#
+#This is a pattern, the colours in this pattern will be cycled through top - bottom by all items of armour. The pattern can have as many colours as you want,
+#but must have at least 2 to function. Here is a list of possible colours:
+#
+#WHITE
+#SILVER
+#GRAY
+#BLACK
+#RED
+#MAROON
+#YELLOW
+#OLIVE
+#LIME
+#GREEN
+#AQUA
+#TEAL
+#BLUE
+#NAVY
+#FUCHSIA
+#PURPLE
+#ORANGE
+LocaleOptions:
+    enableUSMode: false
+    # enableUSMode - Setting this to true will change all instances of the word armour in the help menu to armor.
+    changeHelpToRa: false
+    #changeHelpToRa - Setting this to true will chage /rainbowarmour or /rainbowarmor to /ra in the help menu.
